@@ -1,0 +1,231 @@
+# =========================
+# Python
+# =========================
+
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Compiled extensions
+*.so
+*.dll
+
+# =========================
+# Virtual environments
+# =========================
+
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# =========================
+# Environment / Secrets
+# =========================
+
+.env
+.env.*
+!.env.example
+
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+secrets/
+credentials/
+
+# =========================
+# FastAPI / Uvicorn
+# =========================
+
+*.log
+logs/
+uvicorn.log
+
+# Runtime files
+*.pid
+*.sock
+
+# =========================
+# SQLite / Local Database
+# =========================
+
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.sqlite-journal
+
+data/
+runtime/
+temp/
+tmp/
+
+# =========================
+# Evidence / Proctor Data
+# =========================
+
+evidence/
+captures/
+screenshots/
+recordings/
+snapshots/
+uploads/
+offline_queue/
+
+# Images/audio generated during runtime
+*.wav
+*.webm
+
+# =========================
+# PyInstaller
+# =========================
+
+build/
+dist/
+
+*.spec
+
+# If we later keep a customized .spec file,
+# remove "*.spec" from this gitignore.
+
+# =========================
+# Packaging / Installers
+# =========================
+
+installer/output/
+release/
+releases/
+
+*.exe
+*.msi
+*.dmg
+*.pkg
+*.app
+*.ipa
+
+# =========================
+# Python packaging
+# =========================
+
+*.egg-info/
+.eggs/
+eggs/
+parts/
+sdist/
+wheels/
+share/python-wheels/
+
+pip-wheel-metadata/
+MANIFEST
+
+# =========================
+# Testing
+# =========================
+
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+
+# =========================
+# Type checking / linting
+# =========================
+
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+.ruff_cache/
+.pyre/
+.pytype/
+
+# =========================
+# Jupyter
+# =========================
+
+.ipynb_checkpoints/
+
+# =========================
+# IDEs / Editors
+# =========================
+
+.vscode/
+.idea/
+
+*.code-workspace
+
+# =========================
+# Windows
+# =========================
+
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+
+# =========================
+# macOS
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# =========================
+# Linux
+# =========================
+
+*~
+.directory
+
+# =========================
+# Node / Frontend
+# In case we later add a
+# local UI/web assets
+# =========================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# =========================
+# ML / AI cache
+# =========================
+
+.cache/
+.cache/huggingface/
+torch_cache/
+
+# Large locally-downloaded models
+models/downloaded/
+
+# =========================
+# Temporary model/inference files
+# =========================
+
+*.onnx.tmp
+*.engine
+*.trt
+
+# =========================
+# Misc
+# =========================
+
+*.bak
+*.backup
+*.swp
+*.swo
+*.tmp
+*.temp
